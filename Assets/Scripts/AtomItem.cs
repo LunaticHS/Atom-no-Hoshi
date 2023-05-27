@@ -27,11 +27,11 @@ public class AtomItem : MonoBehaviour
 
     public LevelManager levelManager;
 
-    private Transform m_selfTransform;
+    protected Transform m_selfTransform;
 
     public AudioClip explosionClip;
 
-    private void addBullet(int vx,int vy)
+    protected void addBullet(int vx,int vy)
     {
         if(bulletObj == null)
         {
