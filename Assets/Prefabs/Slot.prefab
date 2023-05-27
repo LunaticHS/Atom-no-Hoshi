@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 5311297689656386573}
   - component: {fileID: 2586337451685784770}
   m_Layer: 0
-  m_Name: ice_block_prefab
+  m_Name: Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

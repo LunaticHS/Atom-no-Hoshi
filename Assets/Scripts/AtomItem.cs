@@ -25,15 +25,11 @@ public class AtomItem : MonoBehaviour
 
     public GameObject bulletObj;
 
-    public GameObject fruitSpriteObj;
-
     public LevelManager levelManager;
 
     private Transform m_selfTransform;
 
     public AudioClip explosionClip;
-
-    public bool movable = false;
 
     private void addBullet(int vx,int vy)
     {
@@ -73,11 +69,6 @@ public class AtomItem : MonoBehaviour
         if (RightDown) addBullet(1, -1);
     }
 
-    private void OnDestroy()
-    {
-
-    }
-
     public void OnTriggerEnter2D(Collider2D collision)
     {
         //如果碰撞到的是子弹,并且子弹是free的
@@ -92,7 +83,7 @@ public class AtomItem : MonoBehaviour
     }
 
 
-    private void explosion()
+    public void explosion()
     {
         //如果已经爆炸过了，就不再爆炸
         if (isExplosion)
@@ -101,8 +92,6 @@ public class AtomItem : MonoBehaviour
         }
         //播放爆炸音效
         AudioSource.PlayClipAtPoint(explosionClip, Vector3.zero);
-
-
         //设置已经爆炸
         isExplosion = true;
         //遍历所有的bullets
@@ -116,9 +105,6 @@ public class AtomItem : MonoBehaviour
         {
             m_selfTransform.gameObject.SetActive(false);
         }
-        //free所有的bullets
-        //Debug.Log("explosion");
-        DestroyFruitBg();
     }
 
     public void UpdatePosition(int rowIndex, int columIndex)
@@ -141,23 +127,8 @@ public class AtomItem : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("Atom clicked");
-        if (!movable)
-        {
-            if (levelManager.ChanceLeft <= 0) return;
-            levelManager.ChanceLeft--;
-            explosion();
-        }
-        if (movable)
-        {
-            levelManager.cur_movable_atom = this.gameObject;
-            //log
-        }
-    }
-
-    public void DestroyFruitBg()
-    {
-
-        if (null == fruitSpriteObj) return;
-        fruitSpriteObj = null;
+        if (levelManager.ChanceLeft <= 0) return;
+        levelManager.ChanceLeft--;
+        explosion();
     }
 }

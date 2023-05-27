@@ -2300,6 +2300,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6362649054411986643, guid: fdbe1b3db78de0b448a4c476905bfa65, type: 3}
+      propertyPath: LeftUp
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362649054411986643, guid: fdbe1b3db78de0b448a4c476905bfa65, type: 3}
+      propertyPath: rowIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362649054411986643, guid: fdbe1b3db78de0b448a4c476905bfa65, type: 3}
+      propertyPath: columIndex
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdbe1b3db78de0b448a4c476905bfa65, type: 3}
 --- !u!4 &1192973323 stripped
@@ -2480,6 +2492,18 @@ PrefabInstance:
     - target: {fileID: 1688075029057065475, guid: fdbe1b3db78de0b448a4c476905bfa65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362649054411986643, guid: fdbe1b3db78de0b448a4c476905bfa65, type: 3}
+      propertyPath: rowIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362649054411986643, guid: fdbe1b3db78de0b448a4c476905bfa65, type: 3}
+      propertyPath: RightDown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362649054411986643, guid: fdbe1b3db78de0b448a4c476905bfa65, type: 3}
+      propertyPath: columIndex
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdbe1b3db78de0b448a4c476905bfa65, type: 3}
@@ -2702,6 +2726,14 @@ PrefabInstance:
     - target: {fileID: 1688075029057065475, guid: fdbe1b3db78de0b448a4c476905bfa65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362649054411986643, guid: fdbe1b3db78de0b448a4c476905bfa65, type: 3}
+      propertyPath: LeftDown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362649054411986643, guid: fdbe1b3db78de0b448a4c476905bfa65, type: 3}
+      propertyPath: columIndex
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdbe1b3db78de0b448a4c476905bfa65, type: 3}

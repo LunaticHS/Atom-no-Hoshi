@@ -92,8 +92,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1688075029057065475}
   - component: {fileID: 1688075029057065474}
-  - component: {fileID: 1688075029057065473}
   - component: {fileID: 1688075029057065596}
+  - component: {fileID: 6362649054411986643}
   m_Layer: 3
   m_Name: Atom_movable
   m_TagString: Untagged
@@ -168,34 +168,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1688075029057065473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1688075029057065472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e517095128a4ea43a84497a12defc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rowIndex: 6
-  columIndex: 6
-  Left: 0
-  Right: 0
-  Up: 0
-  Down: 1
-  LeftUp: 0
-  LeftDown: 0
-  RightUp: 0
-  RightDown: 0
-  isExplosion: 0
-  bulletObj: {fileID: 2709542779034498118, guid: fa8c5f8f813ad8845a79e58e06e4ac3d, type: 3}
-  fruitSpriteObj: {fileID: 6636504366411564609, guid: b8b230cbebb22fe4cb88b56dc6528e54, type: 3}
-  levelManager: {fileID: 0}
-  explosionClip: {fileID: 8300000, guid: 0e785b1413102604789fa341991489e0, type: 3}
-  movable: 1
 --- !u!58 &1688075029057065596
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -212,6 +184,32 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2
+--- !u!114 &6362649054411986643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688075029057065472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2915f5db5edfba4790297d7fa680c1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rowIndex: 0
+  columIndex: 0
+  Left: 0
+  Right: 0
+  Up: 0
+  Down: 0
+  LeftUp: 0
+  LeftDown: 0
+  RightUp: 0
+  RightDown: 0
+  isExplosion: 0
+  bulletObj: {fileID: 2709542779034498118, guid: fa8c5f8f813ad8845a79e58e06e4ac3d, type: 3}
+  levelManager: {fileID: 0}
+  explosionClip: {fileID: 8300000, guid: 0e785b1413102604789fa341991489e0, type: 3}
 --- !u!1 &6474144531318896713
 GameObject:
   m_ObjectHideFlags: 0
